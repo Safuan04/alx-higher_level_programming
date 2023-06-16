@@ -1,4 +1,4 @@
-#!/usr/min/python3
+#!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
     cp_matrix = matrix.copy()
     for i in range(len(matrix)):

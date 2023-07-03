@@ -1,0 +1,50 @@
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+text_indentation is a function that prints a text with 2 new lines after each of these characters: ., ? and :
+-> Prototype: def text_indentation(text):
+-> text must be a string
+-> there should be no space at the beginning or at the end of each printed line
+---
+in this text file you will find a break down of all the possible cases
+---
+
+#case.1 all the conditions are respected
+>>> text_indentation("Hi there my name is: safouan, do you know where i live ? if you dont know. i live in tetouan.") 
+Hi there my name is:
+<BLANKLINE>
+safouan, do you know where i live ?
+<BLANKLINE>
+if you dont know.
+<BLANKLINE>
+i live in tetouan.
+<BLANKLINE>
+
+---
+#case.2 what if we used other types and not a string
+>>> text_indentation(25)                                                                                              
+Traceback (most recent call last):
+    ...
+TypeError: text must be a string
+
+>>> text_indentation(("Hi", "My name is safouan")) 
+Traceback (most recent call last):
+    ...
+TypeError: text must be a string
+
+---
+#case.3 what if entered no arguments
+>>> text_indentation()                             
+Traceback (most recent call last):
+    ...
+TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+---
+#case.4 what if there were spaces at the begining of the text
+>>> text_indentation("     Hi there my name is Safouan")
+Hi there my name is Safouan
+
+---
+#case.5 what if there were spaces athe end of the text
+>>> text_indentation("Hi there my name is Safouan.     ")
+Hi there my name is Safouan.
+<BLANKLINE>

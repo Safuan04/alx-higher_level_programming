@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 def matrix_divided(matrix, div):
     """divides all elements of a matrix"""
     new_matrix = []

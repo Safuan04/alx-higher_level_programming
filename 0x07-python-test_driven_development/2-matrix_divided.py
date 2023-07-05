@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+""" Defining a function called matrix_divided """
+
+
 def matrix_divided(matrix, div):
     """divides all elements of a matrix"""
     new_matrix = []
@@ -19,7 +22,7 @@ def matrix_divided(matrix, div):
     row_len = len(matrix[0])
 
     for row in matrix:
-        if not row_len == len(row):
+        if row_len != len(row):
             raise TypeError("Each row of the matrix must have the same size")
     for i in matrix:
         new_row = []

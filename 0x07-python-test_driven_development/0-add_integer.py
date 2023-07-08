@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+""" Defining a function called add_integer """
+
+
 def add_integer(a, b=98):
     """adds two integers"""
     if not isinstance(a, (int, float)):

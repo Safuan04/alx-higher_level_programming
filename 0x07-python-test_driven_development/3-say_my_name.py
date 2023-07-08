@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+""" Defining a function called say_my_name """
+
+
 def say_my_name(first_name, last_name=""):
     """prints My name is <first name> <last name>"""
     if not isinstance(first_name, str):

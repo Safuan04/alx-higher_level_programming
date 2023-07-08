@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+""" Defining a function called print_square """
+
+
 def print_square(size):
     """prints a square with the character #."""
     if not isinstance(size, int):

@@ -1,5 +1,8 @@
 #!/usr/bin/python3
+"""Define a class named Rectangle"""
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+
 """Define a class named Rectangle"""
 
 

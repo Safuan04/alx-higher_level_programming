@@ -2,6 +2,6 @@
 """define a class named BaseGeometry"""
 
 
-class BaseGeometry(object)
+class BaseGeometry(object):
     """Define an empty class BaseGeometry"""
     pass

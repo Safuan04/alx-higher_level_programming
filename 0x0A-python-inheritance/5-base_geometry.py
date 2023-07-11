@@ -3,6 +3,5 @@
 
 
 class BaseGeometry(object)
-    """Define an empty class"""
-
+    """Define an empty class BaseGeometry"""
     pass

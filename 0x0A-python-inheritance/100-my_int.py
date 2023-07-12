@@ -3,6 +3,7 @@
 
 
 class MyInt(int):
+    """This is is the class MyInt that inherits from int"""
 
     def __eq__(self, other):
         """Overrides equality operator."""

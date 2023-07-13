@@ -1,14 +1,14 @@
 #!/usr/bin/python3
-"""Defining a function called load_from_json_file"""
+"""Defining a function called save_to_json_file"""
 
 
 import json
 
 
-def load_from_json_file(filename):
-    """load_from_json_file function creates an Object from a
-    “JSON file”."""
+def save_to_json_file(my_obj, filename):
+    """this is a function that writes an Object to a text file,
+    using a JSON representation."""
 
-    with open(filename, 'r', encoding="utf-8") as Json_file:
+    with open(filename, "w", encoding="utf-8") as File:
 
-        return json.load(Json_file)
+        File.write(json.dumps(my_obj))

@@ -20,10 +20,14 @@ class Rectangle(Base):
 
     @property
     def width(self):
+        """getter"""
+
         return self.__width
 
     @width.setter
     def width(self, value):
+        """setter"""
+
         if type(value) is not int:
             raise TypeError("width must be an integer")
         if value <= 0:
@@ -36,6 +40,8 @@ class Rectangle(Base):
 
     @height.setter
     def height(self, value):
+        """setter"""
+
         if type(value) is not int:
             raise TypeError("height must be an integer")
         if value <= 0:
@@ -44,10 +50,14 @@ class Rectangle(Base):
 
     @property
     def x(self):
+        """getter"""
+
         return self.__x
 
     @x.setter
     def x(self, value):
+        """setter"""
+
         if type(value) is not int:
             raise TypeError("x must be an integer")
         if value < 0:
@@ -56,10 +66,14 @@ class Rectangle(Base):
 
     @property
     def y(self):
+        """getter"""
+
         return self.__y
 
     @y.setter
     def y(self, value):
+        """setter"""
+
         if type(value) is not int:
             raise TypeError("y must be an integer")
         if value < 0:
@@ -81,7 +95,7 @@ class Rectangle(Base):
             for space in range(self.__x):
                 print(" ", end="")
             for j in range(self.__width):
-                print("#", end="")
+                print ("#", end="")
             print()
 
     def __str__(self):

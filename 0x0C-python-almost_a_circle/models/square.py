@@ -8,7 +8,7 @@ from rectangle import Rectangle
 
 
 class Square(Rectangle):
-    """This is a class named square that inherits from Rectangle"""
+    """This is a class named Square that inherit from Rectangle"""
 
     def __init__(self, size, x=0, y=0, id=None):
         """Class constructor"""
@@ -18,10 +18,14 @@ class Square(Rectangle):
 
     @property
     def size(self):
+        """getter"""
+
         return self.__size
 
     @size.setter
     def size(self, value):
+        """setter"""
+
         if type(value) is not int:
             raise TypeError("width must be an integer")
         if value <= 0:
@@ -29,6 +33,8 @@ class Square(Rectangle):
         self.__size = value
 
     def __str__(self):
+        """This is amethod that return the string repre of a rectangle"""
+
         return ("[Square] ({}) {}/{} - {}". format(self.id,
                 self.x, self.y, self.size))
 

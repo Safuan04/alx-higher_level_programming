@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Importing the rectangle class"""
 
-from rectangle import Rectangle
+from models.rectangle import Rectangle
 
 
 """Define a class named square"""

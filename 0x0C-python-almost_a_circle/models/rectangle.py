@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Importing the Base class"""
 
-from base import Base
+from models.base import Base
 
 """Define a class named Rectangle"""
 

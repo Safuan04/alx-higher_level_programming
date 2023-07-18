@@ -20,13 +20,13 @@ class Rectangle(Base):
 
     @property
     def width(self):
-        """getter"""
+        """this is a getter"""
 
         return self.__width
 
     @width.setter
     def width(self, value):
-        """setter"""
+        """this is a setter"""
 
         if type(value) is not int:
             raise TypeError("width must be an integer")
@@ -36,13 +36,12 @@ class Rectangle(Base):
 
     @property
     def height(self):
-        """getter"""
-
+        """this is a getter"""
         return self.__height
 
     @height.setter
     def height(self, value):
-        """setter"""
+        """this is a setter"""
 
         if type(value) is not int:
             raise TypeError("height must be an integer")
@@ -52,13 +51,13 @@ class Rectangle(Base):
 
     @property
     def x(self):
-        """getter"""
+        """this is a getter"""
 
         return self.__x
 
     @x.setter
     def x(self, value):
-        """setter"""
+        """this is a setter"""
 
         if type(value) is not int:
             raise TypeError("x must be an integer")
@@ -68,13 +67,13 @@ class Rectangle(Base):
 
     @property
     def y(self):
-        """getter"""
+        """this is a getter"""
 
         return self.__y
 
     @y.setter
     def y(self, value):
-        """setter"""
+        """this is a setter"""
 
         if type(value) is not int:
             raise TypeError("y must be an integer")

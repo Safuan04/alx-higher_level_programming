@@ -14,23 +14,20 @@ class Square(Rectangle):
         """Class constructor"""
 
         super().__init__(size, size, x, y, id)
-        self.size = size
 
     @property
     def size(self):
-        """this is getter"""
+        """this is a getter"""
 
-        return self.__size
+        return self.width
 
     @size.setter
     def size(self, value):
         """this is a setter"""
 
-        if type(value) is not int:
-            raise TypeError("width must be an integer")
-        if value <= 0:
-            raise ValueError("width must be > 0")
-        self.__size = value
+        self.width = value
+        self.height = value
+
 
     def __str__(self):
         """This is amethod that return the string repre of a rectangle"""

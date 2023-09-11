@@ -2,7 +2,7 @@
 
 const args = process.argv;
 
-const num = parseInt(argv[2]);
+const num = parseInt(args[2]);
 
 let lines = '';
 

@@ -16,9 +16,10 @@ if __name__ == "__main__":
 
     mycursor = mydb.cursor()
 
-    mysql = ("SELECT * FROM states WHERE name = %s")
-    arg_name = (argv[4],)
-    mycursor.execute(mysql, arg_name)
+    user_input = argv[4]
+    mysql = ("SELECT * FROM states WHERE name = '{}'".format(user_input))
+    
+    mycursor.execute(mysql)
 
     result = mycursor.fetchall()
     for row in result:

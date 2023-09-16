@@ -18,4 +18,3 @@ if __name__ == "__main__":
         print(f"{result.id}: {result.name}")
     else:
         print("Nothing")
-

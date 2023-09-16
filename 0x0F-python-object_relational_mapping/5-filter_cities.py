@@ -20,7 +20,7 @@ if __name__ == "__main__":
                 FROM cities
                 JOIN states ON cities.state_id = states.id
                 WHERE states.name = %s"""
-    
+
     user_input = (argv[4],)
 
     mycursor.execute(mysql, user_input)

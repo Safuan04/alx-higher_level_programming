@@ -1,27 +1,27 @@
 #!/usr/bin/python3
-"""MySQLdb Module that connects Python script to a database """
+"""importing MySQLdb to connect python to a database"""
 
 
 if __name__ == "__main__":
     import MySQLdb
     from sys import argv
 
-    conn = MySQLdb.connect(
+    db = MySQLdb.connect(
         host="localhost",
         port=3306,
         user=argv[1],
         passwd=argv[2],
         db=argv[3]
-    )
+        )
 
-    cursor = conn.cursor()
+    mycursor = db.cursor()
 
-    states_id = "SELECT * FROM states"
-    cursor.execute(states_id)
-    results = cursor.fetchall()
+    mycursor.execute("SELECT * FROM states")
 
-    for row in results:
+    result = mycursor.fetchall()
+
+    for row in result:
         print(row)
 
-    cursor.close()
-    conn.close()
+    mycursor.close()
+    db.close()

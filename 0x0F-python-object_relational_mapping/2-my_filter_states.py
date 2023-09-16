@@ -17,8 +17,9 @@ if __name__ == "__main__":
     mycursor = mydb.cursor()
 
     user_input = argv[4]
-    mysql = ("SELECT * FROM states WHERE name = '{}'".format(user_input))
-    
+    mysql = ("""SELECT * FROM states
+                WHERE name LIKE BINARY '{}'""".format(user_input))
+
     mycursor.execute(mysql)
 
     result = mycursor.fetchall()

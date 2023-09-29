@@ -1,2 +1,1 @@
-# this is the complexity of my function's find_peak algotithme
 O(log(n))

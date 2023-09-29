@@ -9,9 +9,9 @@ if __name__ == "__main__":
         with urllib.request.urlopen(req) as response:
             the_page = response.read()
 
-        print('Body response:')
-        print('    - type:', type(the_page))
-        print('    - content:', the_page)
-        print('    - utf8 content:', the_page.decode('utf-8'))
+        print("Body response:\n\t" +
+              f"- type: {type(the_page)}\n\t" +
+              f"- content: {the_page}\n\t" +
+              f"- utf8 content: {the_page.decode('UTF-8')}")
     except urllib.error.URLError as e:
         print(e.reason)

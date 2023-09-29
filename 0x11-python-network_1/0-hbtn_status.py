@@ -12,6 +12,6 @@ if __name__ == "__main__":
         print("Body response:\n\t" +
               f"- type: {type(the_page)}\n\t" +
               f"- content: {the_page}\n\t" +
-              f"- utf8 content: {response.reason}")
+              f"- utf8 content: {the_page.decode('UTF-8')}")
     except urllib.error.URLError as e:
         print(e.reason)

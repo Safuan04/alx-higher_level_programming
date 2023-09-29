@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """importing necessary moduls"""
 
-if __name__ == "__main__":
+import urllib.request
 
-    import urllib.request
+if __name__ == "__main__":
     try:
         req = urllib.request.Request('https://alx-intranet.hbtn.io/status')
         with urllib.request.urlopen(req) as response:

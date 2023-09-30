@@ -13,7 +13,7 @@ if __name__ == "__name__":
     email = argv[2]
     url_email = urlencode(email)
 
-    with urlopen(url, "/", email) as response:
+    with urlopen(url, email) as response:
         the_page = response.read()
 
     print(the_page.decode('URF-8'))

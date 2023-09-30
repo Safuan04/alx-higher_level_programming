@@ -11,7 +11,7 @@ if __name__ == "__name__":
 
     url = argv[1]
     email = argv[2]
-    data = urlencode({'email': email})
+    data = urlencode({'email': email}.encode("utf-8"))
     req = Request(url, data=data, method='Post')
 
     with urlopen(req) as response:

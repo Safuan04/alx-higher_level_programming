@@ -11,5 +11,5 @@ if __name__ == "__main__":
     url = argv[1]
     email = argv[2]
     r = post(url, data={'email': email})
-    r = get(url, auth=('user', 'pass'))
+
     print(r.text)

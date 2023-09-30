@@ -7,7 +7,7 @@ from sys import argv
 from urllib.request import urlopen, Request
 from urllib.parse import urlencode
 
-if __name__ == "__name__":
+if __name__ == "__main__":
 
     url = argv[1]
     email = argv[2]

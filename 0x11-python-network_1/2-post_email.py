@@ -11,7 +11,7 @@ if __name__ == "__name__":
 
     url = argv[1]
     email = argv[2]
-    url_email = urlencode(email)
+    url_email = urlencode({'email': email})
 
     with urlopen(url, email) as response:
         the_page = response.read()

@@ -12,8 +12,9 @@ if __name__ == "__name__":
     url = argv[1]
     email = argv[2]
     url_email = urlencode({'email': email})
+    req = Request(url)
 
-    with urlopen(url, email) as response:
+    with urlopen(url, url_email) as response:
         the_page = response.read()
 
     print(the_page.decode('URF-8'))

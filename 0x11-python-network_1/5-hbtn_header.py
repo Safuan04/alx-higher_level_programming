@@ -11,4 +11,3 @@ if __name__ == "__main__":
     url = argv[1]
     r = get(url, auth=('user', 'pass'))
     print(r.headers['X-Request-Id'])
-

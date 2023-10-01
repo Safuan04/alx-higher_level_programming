@@ -7,9 +7,21 @@ from sys import argv
 
 if __name__ == "__main__":
 
+    if len(argv) < 2:
+        q = ""
+    else:
+        q = argv[1]
+
     url = 'http://0.0.0.0:5000/search_user'
-    q = {'letter': argv[1]}
+    payload = {'q': q}
 
-    r = requests.post(url, json=q)
+    try:
+        r = requests.post(url, data=payload)
+        r_data = r.json()
 
-    print(r.text)
+        if len(r_data) is None:
+            print('No result')
+        else:
+            print(f"[{r_data.get('id')}] {r_data.get('name')}")
+    except ValueError:
+        print("Not a valid JSON")

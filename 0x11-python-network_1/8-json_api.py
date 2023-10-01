@@ -19,7 +19,7 @@ if __name__ == "__main__":
         r = requests.post(url, data=payload)
         r_data = r.json()
 
-        if len(r_data) is None:
+        if len(r_data) == 0:
             print('No result')
         else:
             print(f"[{r_data.get('id')}] {r_data.get('name')}")
